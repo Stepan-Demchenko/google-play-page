@@ -1,0 +1,5 @@
+@media (max-width: 500px) {
+    .additional-info .info div {
+        max-width: 140px;
+    }
+}

@@ -7,9 +7,10 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0"/>
     <title></title>
-    <meta content="">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <script rel="script" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -17,6 +18,9 @@
 <header class="header">
     <div class="icon">
         <i class="fas fa-bars"></i>
+    </div>
+    <div class="icon">
+        <img src="assets/icons/google-play.svg" height="30px" alt="">
     </div>
     <div class="icon">
         <i class="fas fa-search"></i>
@@ -28,7 +32,7 @@
             <img src="assets/images/cat-logo.webp" alt="logo">
         </div>
         <div class="title">
-            <p>Camscanner - Бесплатный PDF-сканер и ID-камера</p>
+            <p>Angry Cat - Free without SMS</p>
             <a class="link-bold text-green" href="">Info</a>
             <a class="link-bold text-green" href="">Info</a>
             <div class="for-what">
@@ -67,19 +71,19 @@
 </section>
 <section class="screenshots">
     <div class="carousel">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
-        <img style="height: inherit;" src="assets/images/cat.jpg" alt="cat">
+        <img src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img  src="assets/images/cat.jpg" alt="cat">
+        <img src="assets/images/cat.jpg" alt="cat">
     </div>
 </section>
 <section class="wrapper">
@@ -214,13 +218,12 @@
         <button class="text-button text-green" onclick="collapseDescription(this)">ПОДРОБНЕЕ...</button>
     </article>
 </section>
-<hr>
-<section style="padding-top: 30px" class="wrapper">
+<section class="wrapper">
     <article class="review">
         <h2>Отзывы</h2>
         <div class="align-center">
-            <a class="link" href="#">
-                <i class="fas fa-info-circle"></i>
+            <a class="link text-grey" href="#">
+                <i class="fas fa-info-circle text-grey"></i>
                 <span>Правила публикации отзывов и другая информация</span>
             </a>
         </div>
@@ -416,31 +419,28 @@
                 </div>
                 <div>
                     <div class="text-semi-bold">Возрастные ограничения</div>
-                    Для всех
-                    <a class="link" href="#">
-                        <span class="text-green">Подробнее…</span>
+                    <div>Для всех</div>
+                    <a class="text-link text-green" href="#">
+                        Подробнее…
                     </a>
                 </div>
                 <div>
                     <div class="text-semi-bold">Интерактивные элементы</div>
                     Взаимодействие пользователей, Покупки из приложения
                 </div>
-            </div>
-            <div class="info">
                 <div>
                     <div class="text-semi-bold">Платный контент</div>
                     От 0,99 $ до 399,99 $ за товар
                 </div>
                 <div>
                     <div class="text-semi-bold">Разрешения</div>
-                    <a class="link" href="#">
-                        <span class="text-green">Подробнее…</span>
+                    <a class="text-link text-green" href="#">
+                        Подробнее…
                     </a>
                 </div>
                 <div>
                     <div class="text-semi-bold">Отчет</div>
-                    <a class="link" href="#">
-                        <span class="text-green">Пожаловаться</span>
+                    <a class="text-link text-green" href="#">Пожаловаться
                     </a>
                 </div>
                 <div>
@@ -449,15 +449,15 @@
                 </div>
                 <div>
                     <div class="text-semi-bold">Разработчик</div>
-                    <a class="link" href="#">
-                        <span class="text-green">Перейти на веб-сайт</span>
+                    <a class="text-link text-green" href="#">
+                        Перейти на веб-сайт
                     </a>
 
-                    <a class="link" href="#">
-                        <span class="text-green">android_support@intsig.com</span>
+                    <a class="text-link text-green" href="#">
+                        android_support@intsig.com
                     </a>
-                    <a class="link" href="#">
-                        <span class="text-green"> Политика конфиденциальности</span>
+                    <a class="text-link text-green" href="#">
+                        Политика конфиденциальности
                     </a>
                 </div>
             </div>
@@ -467,81 +467,139 @@
 <hr>
 <footer>
         <section class="review">
-            <h2 style="align-self: center" class="text-semi-bold">Похожие</h2>
+            <h2 class="align-center text-semi-bold">Похожие</h2>
             <button class="btn">ЕЩЁ</button>
         </section>
+    <section class="carousel">
+        <article class="app-card">
+            <div class="app-card-logo-container">
+                <img src="assets/images/pop-cat-1.jpg" alt="logo">
+            </div>
+            <div class="app-card-content">
+                <div class="text-link app-card-content-name">
+              POP
+                </div>
+                <div class="text-link">
+                    CAT
+                </div>
+            </div>
+            <div class="app-card-content text-extra-sm">
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+            </div>
+        </article>
+        <article class="app-card">
+            <div class="app-card-logo-container">
+                <img src="assets/images/pop-cat-2.png" alt="logo">
+            </div>
+            <div class="app-card-content">
+                <div class="text-link app-card-content-name">
+                    POP
+                </div>
+                <div class="text-link">
+                    CAT
+                </div>
+            </div>
+            <div class="app-card-content text-extra-sm">
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+            </div>
+        </article>
+        <article class="app-card">
+            <div class="app-card-logo-container">
+                <img src="assets/images/pop-cat-1.jpg" alt="logo">
+            </div>
+            <div class="app-card-content">
+                <div class="text-link app-card-content-name">
+              POP
+                </div>
+                <div class="text-link">
+                    CAT
+                </div>
+            </div>
+            <div class="app-card-content text-extra-sm">
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+            </div>
+        </article>
+        <article class="app-card">
+            <div class="app-card-logo-container">
+                <img src="assets/images/pop-cat-2.png" alt="logo">
+            </div>
+            <div class="app-card-content">
+                <div class="text-link app-card-content-name">
+                    POP
+                </div>
+                <div class="text-link">
+                    CAT
+                </div>
+            </div>
+            <div class="app-card-content text-extra-sm">
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+            </div>
+        </article>
+        <article class="app-card">
+            <div class="app-card-logo-container">
+                <img src="assets/images/pop-cat-1.jpg" alt="logo">
+            </div>
+            <div class="app-card-content">
+                <div class="text-link app-card-content-name">
+              POP
+                </div>
+                <div class="text-link">
+                    CAT
+                </div>
+            </div>
+            <div class="app-card-content text-extra-sm">
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+            </div>
+        </article>
+        <article class="app-card">
+            <div class="app-card-logo-container">
+                <img src="assets/images/pop-cat-2.png" alt="logo">
+            </div>
+            <div class="app-card-content">
+                <div class="text-link app-card-content-name">
+                    POP
+                </div>
+                <div class="text-link">
+                    CAT
+                </div>
+            </div>
+            <div class="app-card-content text-extra-sm">
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star text-grey"></i>
+            </div>
+        </article>
+    </section>
+    <section class="terms">
+        ©2021 Google <a href="#" class="text-link text-blue">Умови використання сайту</a> <a href="#" class="text-link text-blue">Конфіденційність</a>
+        <a href="#" class="text-link text-blue">Розробники</a> <a class="text-link text-blue">Про Google</a>|Країна: Сполучені ШтатиМова: Українська
+        <br>
+        Купуючи цей продукт, ви оплачуєте його через Google Payments і приймаєте <a class="text-link text-blue" href="#">Умови використання</a> та
+        <a href="#" class="text-link text-blue">Примітку про конфіденційність</a> Google Payments.
+    </section>
 </footer>
 </body>
-<script rel="script">
-    let dropDownMenu = (event, element) => {
-        event.preventDefault();
-        event.stopPropagation();
-        element.getElementsByClassName('checkout--menu')[0].classList.toggle('checkout--active');
-        element.getElementsByClassName('checkout--menu')[0].parentElement.parentElement.classList.toggle('active');
-
-        document.body.addEventListener('click', () => {
-            element.getElementsByClassName('checkout--menu')[0].classList.remove('checkout--active');
-            element.getElementsByClassName('checkout--menu')[0].parentElement.parentElement.classList.remove('active');
-        });
-    }
-    let collapseDescription = (btnElement) => {
-        if (document.getElementsByClassName('description open').length) {
-            btnElement.textContent = 'ПОДРОБНЕЕ...';
-        } else {
-            btnElement.textContent = 'СКРЫТЬ';
-        }
-        document.getElementsByClassName('description')[0].classList.toggle('open');
-    }
-
-    new Chart(document.getElementById("mixed-chart"), {
-        type: 'bar',
-        data: {
-            labels: ["5", "4", "3", "2", "1"],
-            datasets: [
-                {
-                    label: "",
-                    backgroundColor: ["#57bb8a", "#9ace6a", "#ffcf02", "#ff9f02", "#ff6f31"],
-                    data: [5, 4, 3, 2, 1]
-                }
-            ]
-        },
-        options: {
-            scales: {
-                x: {
-                    grid: {
-                        display: false
-                    },
-                    ticks: {
-                        display: false
-                    }
-                },
-                y: {
-                    grid: {
-                        display: false
-                    }
-                }
-            },
-            legend: {
-                display: false
-            },
-            indexAxis: 'y',
-            // Elements options apply to all of the options unless overridden in a dataset
-            // In this case, we are setting the border of each horizontal bar to be 2px wide
-            elements: {
-                bar: {
-                    display: false,
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false,
-                    title: {
-                        display: false,
-                    }
-                }
-            },
-            responsive: true,
-        },
-    });
-</script>
+<script rel="script" src="script.js"></script>
 </html>
