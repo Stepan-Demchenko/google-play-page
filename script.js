@@ -12,12 +12,19 @@ let dropDownMenu = (event, element) => {
     });
 }
 let collapseDescription = (btnElement) => {
-    if (document.getElementsByClassName('description open').length) {
-        btnElement.textContent = 'ПОДРОБНЕЕ...';
+    const descriptionElement =  document.getElementsByClassName('description')[0];
+    const textElement = document.getElementsByClassName('text')[0];
+    const scrollHeight = +textElement.scrollHeight;
+    const maxHeight = +textElement.style.maxHeight;
+    if (scrollHeight !== maxHeight) {
+        descriptionElement.style.maxHeight = `${scrollHeight}px`;
+        descriptionElement.classList.toggle('open');
+        btnElement.textContent = 'COLLAPSE';
     } else {
-        btnElement.textContent = 'СКРЫТЬ';
+        descriptionElement.classList.toggle('open');
+        descriptionElement.style.maxHeight = '162px';
+        btnElement.textContent = 'READ MORE';
     }
-    document.getElementsByClassName('description')[0].classList.toggle('open');
 }
 
 new Chart(document.getElementById("mixed-chart"), {

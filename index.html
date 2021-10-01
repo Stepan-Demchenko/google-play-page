@@ -11,41 +11,33 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile-style.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" rel="stylesheet">
     <script rel="script" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-<header class="header">
-    <div class="icon">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="icon">
-        <img src="assets/icons/google-play.svg" height="30px" alt="">
-    </div>
-    <div class="icon">
-        <i class="fas fa-search"></i>
-    </div>
-</header>
 <section class="wrapper">
     <article class="app-info">
         <div class="logo">
             <img src="assets/images/cat-logo.webp" alt="logo">
         </div>
         <div class="title">
-            <p>Angry Cat - Free without SMS</p>
+            <p class="title">Angry Cat - Free without SMS</p>
             <a class="link-bold text-green" href="">Info</a>
             <a class="link-bold text-green" href="">Info</a>
             <div class="for-what">
                 <img src="assets/icons/age.png" alt="age">
-                Для всех
+                For all
             </div>
+            <article class="note">
+                <span class="text-sm">Contains Ads</span>
+            </article>
             <div class="rate">
                 <div>
                     <i class="fas fa-star text-grey"></i>
                     <i class="fas fa-star text-grey"></i>
                     <i class="fas fa-star text-grey"></i>
                     <i class="fas fa-star text-grey"></i>
-                    <i class="fas fa-star text-grey"></i>
+                    <i class="fas fa-star-half-alt text-grey"></i>
                 </div>
                 <div class="text-grey">
                     3 111 3124
@@ -57,16 +49,13 @@
         </div>
     </article>
     <article class="actions">
-        <button class="btn">
-            Установить
+        <button class="btn w-full">
+            Install
         </button>
     </article>
     <article class="add-to-favorite">
         <i class="text-green far fa-bookmark"></i>
-        <span>Добавить в список желаний</span>
-    </article>
-    <article class="note">
-        <span class="text-sm">Есть реклама·Поддерживаются покупки в приложении</span>
+        <span>Add to Wishlist</span>
     </article>
 </section>
 <section class="screenshots">
@@ -215,16 +204,16 @@
 
     </article>
     <article class="align-center">
-        <button class="text-button text-green" onclick="collapseDescription(this)">ПОДРОБНЕЕ...</button>
+        <button class="text-button text-green" onclick="collapseDescription(this)">READ MORE</button>
     </article>
 </section>
 <section class="wrapper">
     <article class="review">
-        <h2>Отзывы</h2>
+        <h2>REVIEWS</h2>
         <div class="align-center">
             <a class="link text-grey" href="#">
                 <i class="fas fa-info-circle text-grey"></i>
-                <span>Правила публикации отзывов и другая информация</span>
+                <span>Review policy and info</span>
             </a>
         </div>
     </article>
@@ -236,10 +225,11 @@
                 <i class="fas fa-star text-grey"></i>
                 <i class="fas fa-star text-grey"></i>
                 <i class="fas fa-star text-grey"></i>
-                <i class="fas fa-star text-grey"></i>
+                <i class="fas fa-star-half-alt text-grey"></i>
+
             </div>
             <div class="text-grey">
-                Всего:
+                total:
                 <i class="fas fa-user text-grey"></i>
             </div>
             <div class="text-grey">
@@ -381,83 +371,80 @@
         </article>
     </article>
     <article class="align-center">
-        <button class="text-button text-green">ВСЕ ОТЗЫВЫ</button>
+        <button class="text-button text-green">READ ALL REVIEWS</button>
     </article>
 </section>
 <hr>
 <section class="wrapper">
     <article class="block">
-        <h2>Что нового</h2>
-        <p class="text-grey">Исправлены ошибки</p>
+        <h2>What's New</h2>
+        <p class="text-grey">Get the best experience for enjoying recent hits and timeless classics with our latest Netflix update for your phone and tablet.</p>
     </article>
 </section>
 <hr>
 <section class="wrapper">
     <article class="block">
-        <h2>Дополнительная информация</h2>
+        <h2>Additional Information</h2>
         <section class="additional-info">
             <div class="info">
                 <div>
-                    <div class="text-semi-bold">Обновлено</div>
-                    26 сентября 2021 г.
+                    <div class="text-semi-bold">Updated</div>
+                    September 29, 2021
                 </div>
                 <div>
-                    <div class="text-semi-bold">Обновлено</div>
-                    26 сентября 2021 г.
-                </div>
-                <div>
-                    <div class="text-semi-bold">Количество установок</div>
+                    <div class="text-semi-bold">Installs</div>
                     100 000 000+
                 </div>
                 <div>
-                    <div class="text-semi-bold">Текущая версия</div>
-                    Зависит от устройства
+                    <div class="text-semi-bold">Current Version</div>
+                    Varies with device
                 </div>
                 <div>
-                    <div class="text-semi-bold">Требуемая версия Android</div>
-                    Зависит от устройства
+                    <div class="text-semi-bold">Requires Android</div>
+                    Varies with device
                 </div>
                 <div>
-                    <div class="text-semi-bold">Возрастные ограничения</div>
-                    <div>Для всех</div>
+                    <div class="text-semi-bold">Content Rating</div>
+                    <div>Rated for 12+
+                        Parental Guidance Recommended</div>
                     <a class="text-link text-green" href="#">
-                        Подробнее…
+                        Learn more
                     </a>
                 </div>
                 <div>
-                    <div class="text-semi-bold">Интерактивные элементы</div>
-                    Взаимодействие пользователей, Покупки из приложения
+                    <div class="text-semi-bold">Interactive Elements</div>
+                    Users Interact, Digital Purchases
                 </div>
                 <div>
-                    <div class="text-semi-bold">Платный контент</div>
-                    От 0,99 $ до 399,99 $ за товар
+                    <div class="text-semi-bold">In-app Products</div>
+                    UAH 25.99 - UAH 8,999.99 per item
                 </div>
                 <div>
-                    <div class="text-semi-bold">Разрешения</div>
+                    <div class="text-semi-bold">Permissions</div>
                     <a class="text-link text-green" href="#">
-                        Подробнее…
+                        View details
                     </a>
                 </div>
                 <div>
-                    <div class="text-semi-bold">Отчет</div>
-                    <a class="text-link text-green" href="#">Пожаловаться
+                    <div class="text-semi-bold">Report</div>
+                    <a class="text-link text-green" href="#">Flag as inappropriate
                     </a>
                 </div>
                 <div>
-                    <div class="text-semi-bold">Продавец</div>
-                    CamSoft Information
+                    <div class="text-semi-bold">Offered By</div>
+                    Google LLC
                 </div>
                 <div>
-                    <div class="text-semi-bold">Разработчик</div>
+                    <div class="text-semi-bold">Developer</div>
                     <a class="text-link text-green" href="#">
-                        Перейти на веб-сайт
+                        Visit website
                     </a>
 
                     <a class="text-link text-green" href="#">
-                        android_support@intsig.com
+                        ytandroid-support@google.com
                     </a>
                     <a class="text-link text-green" href="#">
-                        Политика конфиденциальности
+                        Privacy Policy
                     </a>
                 </div>
             </div>
@@ -467,8 +454,8 @@
 <hr>
 <footer>
         <section class="review">
-            <h2 class="align-center text-semi-bold">Похожие</h2>
-            <button class="btn">ЕЩЁ</button>
+            <h2 class="align-center text-semi-bold">SIMILAR</h2>
+            <button class="btn">SEE MORE</button>
         </section>
     <section class="carousel">
         <article class="app-card">
@@ -593,11 +580,11 @@
         </article>
     </section>
     <section class="terms">
-        ©2021 Google <a href="#" class="text-link text-blue">Умови використання сайту</a> <a href="#" class="text-link text-blue">Конфіденційність</a>
-        <a href="#" class="text-link text-blue">Розробники</a> <a class="text-link text-blue">Про Google</a>|Країна: Сполучені ШтатиМова: Українська
+        ©2021 Google <a href="#" class="text-link text-blue">Site Terms of Service</a> <a href="#" class="text-link text-blue">Privacy</a>
+        <a href="#" class="text-link text-blue">Developers</a> <a class="text-link text-blue">About Google</a>|Location: UkraineLanguage: English (United States)
         <br>
-        Купуючи цей продукт, ви оплачуєте його через Google Payments і приймаєте <a class="text-link text-blue" href="#">Умови використання</a> та
-        <a href="#" class="text-link text-blue">Примітку про конфіденційність</a> Google Payments.
+        By purchasing this item, you are transacting with Google Payments and agreeing to the Google Payments <a class="text-link text-blue" href="#"> Terms of Service</a> та
+        <a href="#" class="text-link text-blue">Privacy Notice.</a>
     </section>
 </footer>
 </body>
