@@ -15,13 +15,13 @@ let collapseDescription = (btnElement) => {
     const descriptionElement =  document.getElementsByClassName('description')[0];
     const textElement = document.getElementsByClassName('text')[0];
     const scrollHeight = +textElement.scrollHeight;
-    const maxHeight = +textElement.style.maxHeight;
-    if (scrollHeight !== maxHeight) {
+    console.log(descriptionElement.classList.contains('open'));
+    if (!descriptionElement.classList.contains('open')) {
         descriptionElement.style.maxHeight = `${scrollHeight}px`;
-        descriptionElement.classList.toggle('open');
+        descriptionElement.classList.add('open');
         btnElement.textContent = 'COLLAPSE';
     } else {
-        descriptionElement.classList.toggle('open');
+        descriptionElement.classList.remove('open');
         descriptionElement.style.maxHeight = '162px';
         btnElement.textContent = 'READ MORE';
     }
