@@ -15,7 +15,6 @@ let collapseDescription = (btnElement) => {
     const descriptionElement =  document.getElementsByClassName('description')[0];
     const textElement = document.getElementsByClassName('text')[0];
     const scrollHeight = +textElement.scrollHeight;
-    console.log(descriptionElement.classList.contains('open'));
     if (!descriptionElement.classList.contains('open')) {
         descriptionElement.style.maxHeight = `${scrollHeight}px`;
         descriptionElement.classList.add('open');
